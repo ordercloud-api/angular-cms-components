@@ -74,6 +74,7 @@
       [pageSize]="meta.PageSize"
       [(page)]="meta.Page"
       (pageChange)="pageChangeEvent.emit($event)"
+      [maxSize]="25"
     ></ngb-pagination>
   </div>
   <div class="container flex-grow-1" *ngIf="!items || !items.length">
